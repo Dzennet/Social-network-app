@@ -1,0 +1,122 @@
+.header {
+  display: grid;
+  background-color: #45acee;
+  grid-template-columns: 50px 1fr auto;
+  grid-template-areas: "logo soc_net_name header_login";
+  align-items: center;
+  padding: 2px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  color: white;
+}
+
+.logo {
+  grid-area: logo;
+  width: 35px;
+  border-radius: 50px;
+}
+
+.soc_net_name {
+  grid-area: soc_net_name;
+  justify-self: start;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 3px;
+}
+
+.header_login {
+  grid-area: header_login;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.header_login button {
+  outline: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  margin: 0 10px;
+  border: 2px solid #f3f8fb;
+}
+
+.header_login button:hover {
+  background-color: #f3f8fb;
+  color: #45acee;
+}
+
+.header_login img {
+  width: 40px;
+  margin: 0 10px;
+  border-radius: 25px;
+}
+
+.header_my_login {
+  font-weight: 500;
+}
+
+.header_burger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    display: none;
+  }
+  .logout_btn {
+    display: none;
+  }
+  .header_burger {
+    display: block;
+    position: relative;
+    top: 2px;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .header_burger::before,
+  .header_burger::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header_burger::before {
+    top: 0;
+  }
+  .header_burger::after {
+    bottom: 0;
+  }
+  .header_burger span {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header_burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header_burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header_burger.active span {
+    transform: scale(0);
+  }
+}

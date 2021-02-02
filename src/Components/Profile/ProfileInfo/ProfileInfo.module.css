@@ -1,0 +1,102 @@
+.profile_body {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile_photo {
+  width: 200px;
+  height: 235px;
+  background-color: rgba(124, 126, 128, 0.2);
+  border-radius: 15px;
+  padding: 15px 15px 30px 15px;
+  margin-right: 20px;
+}
+
+.profile_photo img {
+  width: 100%;
+}
+
+.profile_info_wrap {
+  background-color: rgba(124, 126, 128, 0.2);
+  border-radius: 15px;
+  padding: 15px 15px 6px 15px;
+  flex-grow: 2;
+}
+
+.page_name {
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.my_status {
+  font-size: 13px;
+}
+
+.edit_btn {
+  height: 20px;
+}
+.info_block button {
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  color: #3a7bd5;
+  text-decoration: underline #3a7bd5;
+  font-size: 13px;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.profile_info:hover .info_block button {
+  display: block;
+}
+
+.contact {
+  margin-left: 10px;
+}
+
+.inputfile {
+  opacity: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.inputfile + label {
+  width: 200;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: transparent;
+  color: #3a7bd5;
+  border: 1px solid #3a7bd5;
+}
+
+.labelfile img {
+  width: 20px;
+  margin: 0 5px;
+}
+
+@media (max-width: 767px) {
+  .profile_body {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .profile_info_wrap {
+    width: 200px;
+  }
+}

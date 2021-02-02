@@ -1,0 +1,12 @@
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_form {
+  flex-direction: column;
+}
+
+.login_field {
+  margin-bottom: 10px;
+}

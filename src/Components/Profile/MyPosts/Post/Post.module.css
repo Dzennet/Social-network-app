@@ -1,0 +1,43 @@
+.post_wrapper {
+  display: grid;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: rgba(124, 126, 128, 0.2);
+  padding: 10px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.profile_info {
+  display: grid;
+  grid-template-columns: 1fr 5fr auto;
+  grid-template-areas: "avatar name delete";
+}
+
+.avatar {
+  grid-area: avatar;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.name {
+  grid-area: name;
+  justify-self: start;
+}
+
+.post {
+  padding: 8px 0 10px 0;
+}
+
+.options {
+  padding: 10px 0 0 0;
+  border-top: 1px solid #e7e8ec;
+}
+
+.delete_post {
+  grid-area: delete;
+  cursor: pointer;
+  font-size: 13px;
+  text-decoration: underline;
+  color: rgb(172, 12, 12);
+}

@@ -1,0 +1,11 @@
+.add_post_form {
+  margin-bottom: 25px;
+}
+
+.posts_form_input {
+  border-radius: 25px;
+  border: 2px solid rgb(24 173 237);
+  outline: none;
+  padding: 5px;
+  width: 60%;
+}

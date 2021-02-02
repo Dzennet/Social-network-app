@@ -1,0 +1,24 @@
+.search_people {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 8px;
+}
+
+.nav_name {
+  text-decoration: none;
+}
+
+.name {
+  font-weight: bold;
+  color: #45acee;
+}
+
+.avatar {
+  width: 80px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.status {
+  cursor: default;
+}
